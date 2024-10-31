@@ -1,0 +1,201 @@
+@import url("https://fonts.cdnfonts.com/css/glacial-indifference-2");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  background: url("../img/background_kereta.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header {
+  background: #ffa62b;
+  height: 60px;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 80px 0 20px;
+}
+nav h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 31.7px;
+}
+nav .navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+nav .navbar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  background: #ffa62b;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+  font-family: "Glacial Indifference", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: ease-in 0.2s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: ease-in 0.2s;
+  -moz-transition: ease-in 0.2s;
+  -ms-transition: ease-in 0.2s;
+  -o-transition: ease-in 0.2s;
+}
+nav .navbar a:hover {
+  background: white;
+  color: #ffa62b;
+  box-shadow: 3px 4px rgb(0, 0, 0);
+}
+.container {
+  min-height: 90.1%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h1,
+.container h3,
+.container h4 {
+  padding: 10px;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  animation-name: intro;
+  animation-duration: 3s;
+}
+.container h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.container h3 {
+  font-size: 31.7px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.container h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.container .login {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  height: 60%;
+  margin-top: 80px;
+  background: linear-gradient(to top, black 25%, #ffa62b);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  animation: intro 2s;
+  -webkit-animation: slide 2s;
+}
+.container .login img {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.container .login h1 {
+  color: #ffa62b;
+}
+.container .login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+.container .login form input,
+select,button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+  height: 7%;
+  border-radius: 20px;
+  border: none;
+  outline: #ffa62b;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.container .login form input {
+  padding: 10px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+}
+.container .login form select{
+  padding: 0 10px 0 10px;
+  font-family: 'League Spartan'sans-serif;
+  font-weight: 500;
+}
+.container .login form button {
+  background: #ffa62b;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  -webkit-transition: ease-in 0.3s;
+  -moz-transition: ease-in 0.3s;
+  -ms-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+}
+.container .login form button:hover {
+  background: white;
+  color: #ffa62b;
+}
+.container .login form .check{
+  color: white;
+  font-size: .9em;
+  font-family: 'League Spartan',sans-serif;
+}
+.container .login form .check input{
+  background: white;
+  width: 10px;
+  height: 10px;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+}
+  to {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
